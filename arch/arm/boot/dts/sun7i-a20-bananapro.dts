@@ -209,6 +209,14 @@
 };
 
 &pio {
+	edt_ft5x06_pins: edt_ft5x06_pins@0 {
+                #allwinner,pins = "PH8", "PH7", "PH9", "PH12";
+                allwinner,pins = "PH7", "PH9";
+                allwinner,function = "gpio_out";
+                allwinner,drive = <SUN4I_PINCTRL_40_MA>;
+                allwinner,pull = <SUN4I_PINCTRL_NO_PULL>;
+        };
+	
 	gmac_power_pin_bananapro: gmac_power_pin@0 {
 		allwinner,pins = "PH23";
 		allwinner,function = "gpio_out";
